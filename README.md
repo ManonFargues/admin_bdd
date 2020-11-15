@@ -126,4 +126,4 @@ Importez ce dump de base de données et ajoutez le en tant que source dans votre
 3. Ajoutez un compteur le nombre de payments de la semaine dernière
 4. Ajoutez un panel qui affiche le volume de ventes par jour avec des indicateurs de performances
 ```
-[Dump de base de données à importer](/TP9/backups/stylius_dev.sql)
+[Dump de base de données à importer pour le TP9](/TP9/backups/sylius_dev.sql)
