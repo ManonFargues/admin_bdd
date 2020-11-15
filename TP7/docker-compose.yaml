@@ -19,7 +19,6 @@ services:
       wsrep_node_address: "maria_cluster_1"
       wsrep_node_name: "Node1"
     command: --wsrep-new-cluster
-
   maria_cluster_2:
     image: mariadb:10.5
     ports:
@@ -39,7 +38,6 @@ services:
       wsrep_on: "ON"
       wsrep_node_address: "maria_cluster_2"
       wsrep_node_name: "Node2"
-
   maria_cluster_3:
     image: mariadb:10.5
     ports:
