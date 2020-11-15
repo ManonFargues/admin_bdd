@@ -81,13 +81,15 @@ Un panel sous forme de compteur (gauge) qui affiche le temps nécessaire à l'ex
 
 ## Seconde partie
 
-Il faut ajouter la datasource Mysql : 
+Il faut ajouter la datasource Mysql :  
+
 ![mysql](screenshots/mysql.png "mysql")
 
 ### Second Dashboard :
 ![Deuxieme Dashboard](screenshots/dashboard2.png "Deuxieme Dashboard")
 
 Il y a donc plusieurs panels dans ce second dashboard avec leur requêtes SQL respectives :  
+
   - [les comptes utilisateurs créés par jour](screenshots/account.png)
   - [le nombre total de clients](screenshots/customers.png)
   - [le nombre de payments de la semaine dernière](screenshots/payment.png)
