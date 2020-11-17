@@ -1,6 +1,6 @@
 # TP9
 
-On reprend le docker-compose du TP précédent en rajoutant le service grafana, ce qui nous donne [ceci](docker-compose.yml)
+On reprend le docker-compose du TP précédent en rajoutant le service grafana, ce qui nous donne [ceci](docker-compose.yaml)
 
 Après avoir lancé les containers, on peut aller sur `localhost:3000` qui nous affiche la page Grafana.
 
@@ -34,4 +34,4 @@ Il y a donc plusieurs panels dans ce second dashboard avec leurs requêtes SQL r
   - [les comptes utilisateurs créés par jour](screenshots/account.png)
   - [le nombre total de clients](screenshots/customers.png)
   - [le nombre de payments de la semaine dernière](screenshots/payment.png)
-  - [le volume de ventes par jour avec des indicateurs de performances](screenshots/amount.png)
+  - [le volume de ventes par jour avec des indicateurs de performances](screenshots/amout.png)
