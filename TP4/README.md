@@ -1,4 +1,18 @@
 # TP4
+<details>
+<summary>Ennoncé du Tp</summary>
+
+```
+Première partie :
+
+Créez une image Docker qui contient tous les outils nécessaires pour mettre en place un système de backup automatique.
+
+Deuxième partie :
+
+Mettez en place une stratégie de backups grâce à cron qui génère un dump de la base de données tous les lundis à 17h et génère un fichier compressé en format gzip contenant la date de création.
+```
+
+</details>
 
 ### Création de l'image
 

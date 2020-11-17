@@ -1,4 +1,25 @@
 # TP8
+<details>
+<summary>Ennoncé du Tp</summary>
+
+```
+Première partie :
+
+Créez un fichier docker-compose qui réunit
+
+1. Un serveur mariaDB
+2. Un serveur prometheus
+3. Un serveur mysql-exporter
+
+Et relier les entre eux.
+
+Deuxième partie :
+
+1. Créez un graphique qui affiche toutes les opérations de lectures et d'écritures.
+2. Créez un graphique qui affiche la variation du taux d'opérations de lectures et d'écritures en prenant en compte la moyenne sur les 5 dernières minutes
+```
+
+</details>
 
 ### Fichier [docker-compose](docker-compose.yaml) qui réunit : 
 

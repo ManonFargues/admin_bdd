@@ -1,4 +1,19 @@
 # TP5
+<details>
+<summary>Ennoncé du Tp</summary>
+
+```
+Utilisez la configuration docker-compose précédente (TP4) afin d'instancier un serveur MySQL et un serveur MariaDB qui partagent un dossier /backups commun.
+
+Connectez vous en premier au serveur MySQL, créez une base de données avec au moins une table qui contient quelques données.
+
+Exportez cette base de données dans le dossier /backups.
+
+Connectez vous au serveur MariaDB et importez la base que vous venez d'exporter.
+```
+
+</details>
+
 ### Importer une base de donée MYSQL vers MariaDB  
 
 Création du fichier [docker-compose](docker-compose.yaml).
