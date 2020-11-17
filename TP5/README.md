@@ -1,37 +1,14 @@
 # TP5
 ### Importer une base de donée MYSQL vers MariaDB  
 
-#### Création du fichier docker-compose :
+Création du fichier [docker-compose](docker-compose.yaml).
 
-```
-version:  '3.7'
+Lancer le conteneur : `docker-compose up -d` 
 
-services:
-    mysql:
-        image: mysql:5.7
-        environment:
-            MYSQL_ROOT_PASSWORD: password
-        volumes:
-            - ./mysql:/var/lib/mysql
-            - ./backups:/backups
-
-    maria:
-        image: mariadb:10.4
-        environment:
-            MYSQL_ROOT_PASSWORD: password
-        volumes:
-            - ./maria:/var/lib/mysql
-            - ./backups:/backups
-```
-
-#### Lancer un conteneur :
-`docker-compose up -d` 
-
-#### Exécuter des commandes à l'intérieur de notre serveur MySQL :
-`docker-compose exec mysql sh`
+Exécuter des commandes à l'intérieur de notre serveur MySQL : `docker-compose exec mysql sh`
 
 #### Création de la bdd :
-`mysql -u root -p`
+`$ mysql -u root -p`
 
 ```
 # CREATE DATABASE animals;
@@ -48,7 +25,7 @@ services:
 ```
 
 #### Dump la base de données :
-`mysqldump -u root -p animals cat > backups/database.sql`
+`$ mysqldump -u root -p animals cat > backups/database.sql`
 
 #### Se connecter à MariaDB :
 ```
