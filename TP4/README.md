@@ -2,6 +2,8 @@
 
 ### Création de l'image
 
+Dockerfile :
+
 ```
 FROM mysql                           # Import de l'image
 
