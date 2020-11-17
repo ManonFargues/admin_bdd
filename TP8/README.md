@@ -1,6 +1,6 @@
 # TP8
 
-### Fichier [docker-compose](docker-comose.yaml) qui réunit : 
+### Fichier [docker-compose](docker-compose.yaml) qui réunit : 
 
  - Un serveur mariaDB
  - Un serveur prometheus
