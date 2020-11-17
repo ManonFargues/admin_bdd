@@ -23,16 +23,14 @@ IDENTIFIED BY 'recruiter_password';
 FLUSH PRIVILEGES;
 
 ### Exécuter le script pour l'utilisateur adéquat
-mysql -u manager -p manager_password  
-mysql -u recruiter -p recruiter_password
+mysql -u manager -p 
+mysql -u recruiter -p 
 
-### Ajouter trois lignes dans la table *games*
+### Script pour ajouter au moins trois lignes dans la table games
 
 INSERT INTO teams.games (match_date, victory, observations) VALUES (NOW(), true, "quelle victoire!");  
 INSERT INTO teams.games (match_date, victory, observations) VALUES (NOW(), true, "super match");  
 INSERT INTO teams.games (match_date, victory, observations) VALUES (NOW(), false, "ils pensaient vraiment gagner");  
-INSERT INTO teams.games (match_date, victory, observations) VALUES (NOW(), false, "très triste défaite");  
-INSERT INTO teams.games (match_date, victory, observations) VALUES (NOW(), true, "il a fait un match magnifique");  
 
 #### L'éxecuter avec l'utilisateur adéquat
-mysql -u manager -p manager_password
+mysql -u manager -p 
