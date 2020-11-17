@@ -2,23 +2,23 @@
 
 ### Création de l'image
 
-#### Import de l'image
-FROM mysql
-#### Définition de la variable d'environnement
-ENV MYSQL_ROOT_PASSWORD="password"
-#### Update et installation de curl pour pouvoir installer les paquets nécessaires
-RUN apt update -y  
-RUN apt install curl -y  
-RUN apt install logrotate -y  
-RUN apt install cron -y  
-RUN apt install nano -y  
-#### On active cron de façon permanente
-RUN service cron enable
+```
+FROM mysql                           # Import de l'image
+
+ENV MYSQL_ROOT_PASSWORD="password"   # Définition de la variable d'environnement
+
+RUN apt update -y                    # Update et installation de curl 
+RUN apt install curl -y              # pour pouvoir installer les paquets 
+RUN apt install logrotate -y         # nécessaires
+RUN apt install cron -y
+RUN apt install nano -y
+RUN service cron enable              # On active cron de façon permanente
+```
 
 ### On rentre dans notre service
-`docker exec -it bash`
+`$ docker exec -it bash`
 
-Une fois dedans, on configure le crontab pour obtenir une backup tous les lundis à 17h.
+Puis on configure le crontab pour obtenir une backup tous les lundis à 17h.
 
 `17 0 * * 1 tar -zcf /var/backups/"$(date +%Y-%m-%d)".gz /home/backups`
 
