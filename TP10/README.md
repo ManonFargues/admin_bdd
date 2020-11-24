@@ -27,9 +27,11 @@ Dans la partie Conditions il faut saisir ceci :
 
 `WHEN avg() OF query(A, 5m, now) IS ABOVE 10`  
 
-Pour que grafana nous envoie un alerte par email, dans la partie *Notification* il faut selectionner le canal d'alerte que nous avons créer au début (`Gmail`).  
+Pour que grafana nous envoie un alerte par email, dans la partie *Notification* il faut selectionner le canal d'alerte que nous avons créer [au début](screenshots/alerting.png) (`Gmail`).  
 Nous avons aussi la possibilité de saisir un message.
-
 
 ![Alerte](screenshots/alert.png "Alerte")
 
+Après avoir créé cette alerte, nous pouvons la voir apparaître sur notre panel : 
+
+![Alerte](screenshots/connexion.png "Alerte")
