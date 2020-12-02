@@ -18,4 +18,6 @@
 
 [TP8](/TP8): MONITORING
 
-[TP9](/TP9): VISUALISATION
+[TP9](/TP9): VISUALISATION - Créer des dashboards avec grafana
+
+[TP10](/TP9): ALERTES - Envoyer une alerte
