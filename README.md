@@ -20,4 +20,4 @@
 
 [TP9](/TP9): VISUALISATION - Créer des dashboards avec grafana
 
-[TP10](/TP9): ALERTES - Envoyer une alerte
+[TP10](/TP10): ALERTES - Envoyer une alerte
